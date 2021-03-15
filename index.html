@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>la loc'a vélos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" >
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiz-x4siKWmqYiZihO0oAiYo6aYamXKvs"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <header id='header'>
+        <div id='logo'> 
+            <img src="images/logo.png" alt="logo"> 
+        </div>
+        <div id="titre_header">
+            <h1 id="titre">La loc'a vélos</h1>
+        </div>
+    </header>
+    <section id='section1'>
+        <div class="slider">
+            <div id="contain_arrow_left" class="contain_arrow"></div>
+            <div id="contain_arrow_right" class="contain_arrow"></div>
+            <div id='nav_slide'>
+                <div class="butt_slide"></div>
+                <div class="butt_slide"></div>
+                <div id='butt_pause' class="play"></div>
+                <div class="butt_slide"></div>
+                <div class="butt_slide"></div>
+            </div>
+            <img class="slide slide_visible" src="images/img1.jpg" alt="image de vélos">
+            <img class="slide" src="images/img2.jpg" alt="image de vélos">
+            <img class="slide" src="images/img3.jpg" alt="image de vélos">
+            <img class="slide" src="images/img4.jpg" alt="image de vélos">
+        </di0v>
+    </section>
+    <section id="section2">
+        <div id="containtMap">
+            <div id='map'></div> 
+            <div id="info">
+                <h2>La loc'a vélos</h2>
+                <p id="station">Station: <span id="info-station"></span></p>
+                <p id="adresse">Adresse: <span id="info-adresse"></span></p>
+                <p id="velo"> <span id="info-velo"></span> vélos disponible</p>
+                <form>
+                    <label for="nom-cleint">Non :</label><input id="nom-client" type="text" name="nom" placeholder="votre nom">
+                    <label for="prenom-cleint">Prenon :</label><input id="prenom-client" type="text" name="prenom" placeholder="votre prénom">
+                </form>
+                
+            </div>
+            
+        </div>
+    </section>
+        <script src="infosStations.js"></script>
+        <script src="slider.js"></script>
+        <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
+
+        <script src='map.js'></script> 
+        <script src="main.js"></script>
+    </body>
+</html>
